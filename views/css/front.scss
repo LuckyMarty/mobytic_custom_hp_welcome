@@ -25,3 +25,38 @@
 * Don't forget to prefix your containers with your own identifier
 * to avoid any conflicts with others containers.
 */
+
+#mobytic_hp_welcome {
+    display: inline-block;
+    margin-bottom: 50px;
+
+    .title {
+        margin: 0 !important;
+        display: contents;
+
+
+    }
+
+    >div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        align-items: center;
+
+        @media (max-width: 992px) {
+            flex-direction: column-reverse;
+        }
+
+        >div:first-child {
+            width: 75%;
+
+            @media (max-width: 992px) {
+                width: 100%;
+            }
+        }
+
+        >div:last-child {
+            flex: 1;
+        }
+    }
+}
