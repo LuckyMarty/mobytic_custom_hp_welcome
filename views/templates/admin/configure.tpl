@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div class="panel">
+{* <div class="panel">
 	<h3><i class="icon icon-credit-card"></i> {l s='Mobytic - Custom - Home Page - Welcome' mod='mobytic_custom_hp_welcome'}</h3>
 	<p>
 		<strong>{l s='Here is my new generic module!' mod='mobytic_custom_hp_welcome'}</strong><br />
@@ -45,4 +45,4 @@
 			<li><a href="#" target="_blank">{l s='French' mod='mobytic_custom_hp_welcome'}</a></li>
 		</ul>
 	</p>
-</div>
+</div> *}
