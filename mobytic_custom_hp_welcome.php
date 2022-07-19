@@ -30,10 +30,9 @@ if (!defined('_PS_VERSION_')) {
 }
 
 use PrestaShop\PrestaShop\Core\Module\WidgetInterface;
-
 class Mobytic_custom_hp_welcome extends Module implements WidgetInterface
 {
-    protected $config_form = false;
+    // protected $config_form = false;
 
     public function __construct()
     {
@@ -290,13 +289,13 @@ class Mobytic_custom_hp_welcome extends Module implements WidgetInterface
     // ************************************************************ 
     // Widget
     // ************************************************************
-    public function renderWidget($hookName, $configuration)
+    public function renderWidget($hookName, array $configuration)
     {
         $this->getWidgetVariables($hookName, $configuration);
         return $this->fetch('module:' . $this->name . '/views/templates/widget/mobytic_custom_hp_welcome.tpl');
     }
 
-    public function getWidgetVariables($hookName, $configuration)
+    public function getWidgetVariables($hookName, array $configuration)
     {
         $this->getVariables();
     }
