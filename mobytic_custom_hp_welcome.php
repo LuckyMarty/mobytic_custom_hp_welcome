@@ -339,7 +339,7 @@ class Mobytic_custom_hp_welcome extends Module implements WidgetInterface
             $allowed = array('jpg', 'png', 'jpeg');
 
             if (in_array($file_ext, $allowed)) {
-                move_uploaded_file($_FILES[$img_uploaded]['tmp_name'], dirname(__FILE__) . DIRECTORY_SEPARATOR . 'views\img' . DIRECTORY_SEPARATOR . $_FILES[$img_uploaded]["name"]);
+                move_uploaded_file($_FILES[$img_uploaded]['tmp_name'], dirname(__FILE__) . DIRECTORY_SEPARATOR . 'views/img' . DIRECTORY_SEPARATOR . $_FILES[$img_uploaded]["name"]);
                 Configuration::updateValue($img_uploaded, Tools::getValue($img_uploaded));
                 return $this->displayConfirmation($this->l('Mise à jour réussie'));
             } else {

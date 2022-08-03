@@ -58,5 +58,13 @@
         >div:last-child {
             flex: 1;
         }
+
+        &:last-child {
+            >div:last-child {
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            }
+        }
     }
 }

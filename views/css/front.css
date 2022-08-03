@@ -71,4 +71,10 @@
       -ms-flex: 1;
           flex: 1;
 }
+
+@media (max-width: 992px) {
+  #mobytic_hp_welcome > div:last-child > div:last-child {
+    display: none;
+  }
+}
 /*# sourceMappingURL=front.css.map */

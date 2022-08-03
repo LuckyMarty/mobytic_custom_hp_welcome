@@ -16,7 +16,7 @@
 
             <a href="{$btn_url}"><span>{$btn} ></span></a>
         </div>
-        <div">
+        <div>
             <img class="img-fluid" src="{$img}" alt="{$alt}" width="auto" height="100">
         </div>
     </div>
